@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_margin"
+    tools:context=".fragments.PageTwoFragment">
+
+    <TextView
+        android:id="@+id/tv_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title3"
+        android:textSize="@dimen/fab_margin"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fab_height4"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/tv_title3"
+        android:layout_marginTop="@dimen/small_margin"
+        android:src="@drawable/joke_3"/>
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/sv_description1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/img1"-->
+    <!--android:layout_marginTop="@dimen/margin_medium3">-->
+
+
+    <TextView
+        android:id="@+id/tv_description3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fab_height3"
+        android:scrollbars="vertical"
+        android:lineSpacingMultiplier="1.1"
+        android:fontFamily="san-serif-light"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_below="@+id/img3"
+        android:text="@string/description3" />
+
+    <!--</RelativeLayout>-->
+
+    <!--</ScrollView>-->
+
+    <RadioGroup
+        android:id="@+id/rg_funny3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/small_margin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/veryfunny"
+            android:textSize="@dimen/fab_margin"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/funny"
+            android:textSize="@dimen/fab_margin"/>
+
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_funny3"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_alignParentRight="true"
+        >
+
+        <Button
+            android:id="@+id/btn_previous3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:background="#006064"
+            android:padding="@dimen/small_margin"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/fab_margin"/>
+
+        <Button
+            android:id="@+id/btn_next3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:background="#006064"
+            android:padding="@dimen/small_margin"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/fab_margin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
